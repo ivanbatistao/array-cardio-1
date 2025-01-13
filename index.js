@@ -70,6 +70,13 @@ console.log(oldesToYoungestInvestors);
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live?
+const allYearsLivedByAllInvestors = inventors.reduce(
+  (accumulator, currentValue) => {
+    return accumulator + currentValue.passed - currentValue.year;
+  },
+  0
+);
+console.log(allYearsLivedByAllInvestors);
 
 // 5. Sort the inventors by years lived
 
