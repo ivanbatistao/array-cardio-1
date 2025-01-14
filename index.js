@@ -151,3 +151,29 @@ console.log(sortedPeopleByLastName_2);
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
+const data = [
+  'car',
+  'car',
+  'truck',
+  'truck',
+  'bike',
+  'walk',
+  'walk',
+  'car',
+  'van',
+  'bike',
+  'walk',
+  'car',
+  'van',
+  'car',
+  'truck',
+];
+const sumOfAllCarInstances = data.reduce((carCounter, currentValue) => {
+  if (!carCounter[currentValue]) {
+    carCounter[currentValue] = 1;
+  } else {
+    carCounter[currentValue] += 1;
+  }
+  return carCounter;
+}, {});
+console.log(sumOfAllCarInstances);
