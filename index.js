@@ -4,6 +4,48 @@ const inventors = [
   { first: 'Max', last: 'Planck', year: 1858, passed: 1947 },
 ];
 
+const boulevards = [
+  'Boulevards of Paris',
+  'City walls of Paris',
+  'Thiers wall',
+  'Wall of Charles V',
+  'Wall of Philip II Augustus',
+  'City gates of Paris',
+  "Haussmann's renovation of Paris",
+  'Boulevards of the Marshals',
+  'Boulevard Auguste-Blanqui',
+  'Boulevard Barbès',
+  'Boulevard Beaumarchais',
+  "Boulevard de l'Amiral-Bruix",
+  'Boulevard Mortier',
+  'Boulevard Poniatowski',
+  'Boulevard Soult',
+  'Boulevard des Capucines',
+  'Boulevard de la Chapelle',
+  'Boulevard de Clichy',
+  'Boulevard du Crime',
+  "Boulevard du Général-d'Armée-Jean-Simon",
+  'Boulevard Haussmann',
+  "Boulevard de l'Hôpital",
+  'Boulevard des Italiens',
+  'Boulevard Lefebvre',
+  'Boulevard de la Madeleine',
+  'Boulevard de Magenta',
+  'Boulevard Malesherbes',
+  'Boulevard Marguerite-de-Rochechouart',
+  'Boulevard Montmartre',
+  'Boulevard du Montparnasse',
+  'Boulevard Raspail',
+  'Boulevard Richard-Lenoir',
+  'Boulevard Saint-Germain',
+  'Boulevard Saint-Michel',
+  'Boulevard de Sébastopol',
+  'Boulevard de Strasbourg',
+  'Boulevard du Temple',
+  'Boulevard Voltaire',
+  'Boulevard Hippolyte-Marquès',
+];
+
 const people = [
   'Beck, Glenn',
   'Becker, Carl',
@@ -86,6 +128,10 @@ console.log(sortedInventorsByYearsLived);
 
 // 6. Create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+const listOfBoulevardsWithDeInTheName = boulevards.filter((boulevard) =>
+  boulevard.includes('de')
+);
+console.log(listOfBoulevardsWithDeInTheName);
 
 // 7. Sort Exercise
 // Sort the people alphabetically by last name
