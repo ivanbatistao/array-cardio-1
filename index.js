@@ -135,6 +135,8 @@ console.log(listOfBoulevardsWithDeInTheName);
 
 // 7. Sort Exercise
 // Sort the people alphabetically by last name
+const sortedPeopleByLastName = people.sort();
+console.log(sortedPeopleByLastName);
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
