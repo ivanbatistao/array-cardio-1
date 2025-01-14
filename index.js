@@ -170,10 +170,9 @@ const data = [
 ];
 const sumOfAllCarInstances = data.reduce((carCounter, currentValue) => {
   if (!carCounter[currentValue]) {
-    carCounter[currentValue] = 1;
-  } else {
-    carCounter[currentValue] += 1;
+    carCounter[currentValue] = 0;
   }
+  carCounter[currentValue]++;
   return carCounter;
 }, {});
 console.log(sumOfAllCarInstances);
